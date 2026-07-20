@@ -1,112 +1,66 @@
 # Mindful Clinic
 
-## Project Overview
+## Project Objective
 
-Mindful Clinic is a premium personal branding website for a Clinical Psychologist.
-
-The primary objective is to establish professional credibility, showcase clinical expertise, highlight research and educational work, and increase visibility among hospitals, institutes, recruiters, and mental health organizations.
-
-The website is not intended to function as an online therapy platform in Version 1.
+Develop a premium personal branding website for Manvi Mehrotra, a Clinical Psychologist, to strengthen her digital presence, establish professional credibility, and increase visibility among recruiters, hospitals, research organizations, and academic institutions.
 
 ---
 
-## Goals
+## Business Goals
 
-### Primary Goals
-
-- Build a strong professional identity.
-- Increase recruiter confidence.
-- Showcase education and clinical experience.
-- Present research and publications.
-- Publish evidence-based mental health resources.
-
-### Secondary Goals
-
-- Improve online discoverability.
-- Support future private practice.
-- Create a reusable website template.
+- Improve employability
+- Build a trustworthy personal brand
+- Showcase qualifications
+- Showcase clinical experience
+- Present research professionally
+- Publish educational mental health content
 
 ---
 
-## Target Audience
+## Primary Audience
 
 - Hospital Recruiters
 - Mental Health Institutes
-- NGOs
 - Universities
+- NGOs
 - Research Organizations
 - Students
-- General Public
 
 ---
 
-## Project Principles
+## Success Criteria
 
-- Clean
-- Modern
-- Professional
-- Calm
-- Accessible
-- Mobile First
-- SEO Optimized
-- Fast Loading
+A visitor should be able to answer these questions within one minute:
 
----
+✓ Who is Manvi?
 
-## Success Metrics
+✓ What are her qualifications?
 
-The project will be considered successful if it:
+✓ What experience does she have?
 
-- Establishes trust within 10 seconds.
-- Clearly communicates qualifications.
-- Encourages recruiters to contact.
-- Demonstrates professionalism.
-- Provides educational value.
+✓ What research has she done?
+
+✓ How can I contact her?
 
 ---
 
-## Tech Stack
+## Version 1 Scope
 
-- Next.js
-- TypeScript
-- Tailwind CSS
-- shadcn/ui
-- Framer Motion
-- Lucide React
-- React Hook Form
-- Zod
-- Resend
-- Vercel
+Included
 
----
+- Home
+- About
+- Experience
+- Education
+- Research
+- Resources
+- Blog
+- Contact
 
-## AI Workflow
+Excluded
 
-Planning
-↓
-
-ChatGPT
-
-↓
-
-UI Generation (v0)
-
-↓
-
-Review (ChatGPT)
-
-↓
-
-Implementation (Cursor)
-
-↓
-
-Testing
-
-↓
-
-Git Commit
-
-↓
-
-Deployment
+- Appointment Booking
+- Payment Gateway
+- Patient Login
+- Therapy Dashboard
+- Admin Panel
