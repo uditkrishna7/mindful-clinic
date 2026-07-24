@@ -6,6 +6,7 @@ import Footer from "@/components/layout/footer";
 import Expertise from "@/components/sections/expertise";
 import Research from "@/components/sections/research";
 import Values from "@/components/sections/values";
+import Contact from "@/components/sections/contact";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Journey />
       <Research />
       <Values />
+      <Contact />
       <Footer />
     </>
   );
