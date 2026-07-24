@@ -28,7 +28,7 @@ export default function TimelineItem({
       </div>
 
       {/* Content */}
-      <div className="flex-1 rounded-2xl border border-border bg-card p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-xl">
+      <div className="rounded-2xl border border-border/60 bg-white/80 p-6 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/10">
         <p className="text-sm font-semibold text-primary">
           {duration}
         </p>

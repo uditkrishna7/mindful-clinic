@@ -12,7 +12,7 @@ export default function ExpertiseCard({
   description,
 }: ExpertiseCardProps) {
   return (
-    <div className="rounded-2xl border border-border bg-card p-6 transition hover:shadow-md">
+    <div className="rounded-2xl border border-border/60 bg-white/80 p-6 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/10">
       <Icon className="h-8 w-8 text-primary" />
 
       <h3 className="mt-4 text-xl font-semibold">
