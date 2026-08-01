@@ -2,30 +2,37 @@ import {
   Mail,
   MapPin,
   ExternalLink,
+  Clock,
+  MessageCircle,
 } from "lucide-react";
 
 import Container from "@/components/layout/container";
 import SectionHeading from "@/components/ui/section-heading";
 import ContactCard from "@/components/ui/contact-card";
+import { siteConfig } from "@/lib/site";
 
 const contactOptions = [
   {
     icon: Mail,
     title: "Email",
-    description:
-      "Reach out through email for consultation enquiries and professional communication.",
+    value: siteConfig.email,
+    href: `mailto:${siteConfig.email}`,
   },
+
   {
     icon: ExternalLink,
     title: "LinkedIn",
-    description:
-      "Connect professionally and learn more about Manvi's clinical psychology journey.",
+    value: "View Professional Profile",
+    href: siteConfig.linkedin,
   },
+
   {
     icon: MapPin,
-    title: "Location",
-    description:
-      "Based in Prayagraj, Uttar Pradesh, with experience across clinical and counselling settings.",
+    title: "Clinic",
+    value: siteConfig.clinicName,
+    href: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+      siteConfig.clinicAddress
+    )}`,
   },
 ];
 
@@ -35,8 +42,8 @@ export default function Contact() {
       <Container>
         <SectionHeading
           eyebrow="Contact"
-          title="Let's connect in a safe and supportive space."
-          description="Whether you are looking for psychological support, professional collaboration, or have questions, reaching out is the first step."
+          title="Take the first step toward emotional well-being."
+          description="Whether you're seeking psychological support, professional guidance, or simply have a question, I'd be happy to hear from you."
         />
 
         <div className="mt-16 grid gap-8 md:grid-cols-3">
@@ -45,27 +52,83 @@ export default function Contact() {
               key={item.title}
               icon={item.icon}
               title={item.title}
-              description={item.description}
+              value={item.value}
+              href={item.href}
             />
           ))}
         </div>
 
-        <div className="mt-12 rounded-2xl border border-border bg-card p-8 text-center">
-          <h3 className="text-2xl font-bold tracking-tight">
-            Ready to begin your mental health journey?
-          </h3>
+        <div className="mt-16 rounded-3xl border border-border bg-card p-10">
 
-          <p className="mx-auto mt-3 max-w-2xl text-muted-foreground">
-            Take the first step towards understanding yourself better with
-            compassionate, evidence-based psychological support.
-          </p>
+          <div className="grid gap-8 md:grid-cols-2">
 
-          <a
-            href="mailto:manvimehrotra901@gmail.com"
-            className="mt-6 inline-flex rounded-xl bg-primary px-6 py-3 font-medium text-white transition hover:opacity-90"
-          >
-            Send an Email
-          </a>
+            <div>
+
+              <h3 className="text-2xl font-bold">
+                Consultation Details
+              </h3>
+
+              <div className="mt-8 space-y-6">
+
+                <div className="flex gap-4">
+                  <Clock className="mt-1 h-6 w-6 text-primary" />
+
+                  <div>
+                    <p className="font-semibold">
+                      Consultation Hours
+                    </p>
+
+                    <p className="text-muted-foreground">
+                      {siteConfig.consultationHours}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <MessageCircle className="mt-1 h-6 w-6 text-primary" />
+
+                  <div>
+                    <p className="font-semibold">
+                      Consultation Mode
+                    </p>
+
+                    <p className="text-muted-foreground">
+                      {siteConfig.consultationMode}
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div className="flex flex-col justify-center rounded-2xl bg-primary p-8 text-primary-foreground">
+
+              <h3 className="text-2xl font-bold">
+                Ready to Begin?
+              </h3>
+
+              <p className="mt-4 leading-7 opacity-90">
+                Taking the first step can often be the hardest.
+                If you'd like to schedule a consultation or ask a question,
+                feel free to get in touch.
+              </p>
+
+              <a
+                href={`https://wa.me/${siteConfig.whatsapp}?text=${encodeURIComponent(
+                  "Hello Manvi, I came across your website and would like to schedule a psychological consultation."
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-8 inline-flex w-fit rounded-xl bg-white px-6 py-3 font-semibold text-primary transition hover:scale-105"
+              >
+                Schedule a Consultation
+              </a>
+
+            </div>
+
+          </div>
+
         </div>
       </Container>
     </section>
