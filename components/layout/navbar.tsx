@@ -42,7 +42,6 @@ export default function Navbar() {
               Contact
             </Link>
 
-            <Button>Resume</Button>
           </div>
         </nav>
       </Container>
