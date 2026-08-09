@@ -7,7 +7,9 @@ import Expertise from "@/components/sections/expertise";
 import Research from "@/components/sections/research";
 import Values from "@/components/sections/values";
 import Contact from "@/components/sections/contact";
-import WhatToExpect from "@/components/what-to-expect";
+import WhatToExpect from "@/components/sections/what-to-expect";
+import FAQ from "@/components/sections/faq";
+
 
 export default function Home() {
   return (
@@ -20,6 +22,7 @@ export default function Home() {
       <WhatToExpect />
       <Research />
       <Values />
+      <FAQ />
       <Contact />
       <Footer />
     </>
