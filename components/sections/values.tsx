@@ -1,67 +1,46 @@
 import {
-  ShieldCheck,
+  UserRound,
+  GraduationCap,
   HeartHandshake,
-  Leaf,
-  Brain,
-  Ear,
-  Scale,
 } from "lucide-react";
 
 import Container from "@/components/layout/container";
 import SectionHeading from "@/components/ui/section-heading";
 import ValueCard from "@/components/ui/value-card";
 
-const values = [
+const people = [
   {
-    icon: ShieldCheck,
-    title: "Confidentiality",
+    icon: UserRound,
+    title: "Adults",
     description:
-      "Creating a safe and private environment where personal experiences and concerns are respected with professional ethics.",
+      "Support for adults navigating emotional difficulties, anxiety, depression, relationships, self-esteem, body image, overthinking, and other psychological concerns.",
+  },
+  {
+    icon: GraduationCap,
+    title: "Students",
+    description:
+      "A supportive space for students dealing with academic pressure, emotional challenges, relationships, self-esteem, anxiety, and important life transitions.",
   },
   {
     icon: HeartHandshake,
-    title: "Empathy & Compassion",
+    title: "Parents & Caregivers",
     description:
-      "Understanding each individual's experiences with kindness, patience, and genuine emotional support.",
-  },
-  {
-    icon: Leaf,
-    title: "Non-judgmental Space",
-    description:
-      "Providing a supportive environment where individuals can express themselves openly without fear of judgment.",
-  },
-  {
-    icon: Brain,
-    title: "Emotional Safety",
-    description:
-      "Helping individuals feel heard, understood, and comfortable throughout their mental health journey.",
-  },
-  {
-    icon: Ear,
-    title: "Active Listening",
-    description:
-      "Careful attention to thoughts, emotions, and experiences to better understand individual needs.",
-  },
-  {
-    icon: Scale,
-    title: "Professional Boundaries",
-    description:
-      "Maintaining ethical standards and healthy therapeutic boundaries throughout the counselling process.",
+      "Support for parents and caregivers seeking a better understanding of the emotional and psychological needs of the people they care for.",
   },
 ];
 
 export default function Values() {
   return (
-    <section id="values" className="py-24">
+    <section id="who-i-work-with" className="py-24">
       <Container>
         <SectionHeading
-          eyebrow="My Approach"
-          title="A therapeutic space built on trust, respect, and understanding."
-          description="Mental healthcare begins with feeling heard. Every interaction is guided by empathy, confidentiality, and ethical professional practice."
+          eyebrow="Who I Work With"
+          title="Psychological support for different stages of life."
+          description="Everyone's experience is different. The first step is having a space where your concerns can be understood without judgment."
         />
 
-        <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {values.map((item) => (
+        <div className="mt-16 grid gap-8 md:grid-cols-3">
+          {people.map((item) => (
             <ValueCard
               key={item.title}
               icon={item.icon}

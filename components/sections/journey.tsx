@@ -4,46 +4,74 @@ import TimelineItem from "@/components/ui/timeline-item";
 
 const journey = [
   {
-    duration: "Aug 2025 – Present",
+    duration: "11 Months",
     title: "Consultant Psychologist",
-    organization: "Inner Sanctuary, Sanatan Healthcare • Prayagraj",
+    organization: "Inner Sanctuary, Sanatan Healthcare • Tagore Town, Prayagraj",
     description:
-      "Delivering individual psychotherapy and counselling across diverse mental health presentations. Conducting psychometric assessments, developing personalised intervention plans, and leading community mental health awareness programmes in collaboration with hospitals and NGOs.",
+      "Delivered individual psychotherapy and counselling across diverse mental health presentations. Conducted psychometric evaluations, formulated tailored intervention plans, facilitated community wellness workshops, and contributed to institutional outreach and mental health awareness programmes.",
   },
   {
-    duration: "Apr 2026 – Present",
+    duration: "Apr 2026 – Jun 2026",
+    title: "Rehabilitation / NGO Counsellor",
+    organization: "Samadhan Abhiyan • Rehabilitation Centre, Prayagraj",
+    description:
+      "Provided rehabilitation counselling to individuals experiencing substance use and psychosocial challenges. Co-developed individualised recovery plans, facilitated group therapy and psychoeducation sessions, and worked alongside a multidisciplinary team.",
+  },
+  {
+    duration: "6 Months",
     title: "Clinical Psychology Intern",
-    organization: "Samadhan Abhiyaan • Remote",
+    organization: "Manasthan Clinic • Prayagraj",
     description:
-      "Providing rehabilitation counselling for individuals with substance use and psychosocial challenges, facilitating psychoeducation workshops, and supporting multidisciplinary recovery planning.",
+      "Administered standardised psychological assessments, maintained clinical case documentation, and developed experience in the assessment and management of anxiety, depression, and related psychological concerns.",
   },
   {
-    duration: "Jul 2026",
+    duration: "8 Months",
+    title: "Trainee Clinical Psychologist",
+    organization: "Clinical Setting • Prayagraj",
+    description:
+      "Assisted with psycho-diagnostic procedures and standardised psychological assessments while supporting therapy sessions for clients experiencing anxiety and depression under clinical supervision.",
+  },
+  {
+    duration: "Professional Experience",
+    title: "Junior & Associate Psychologist",
+    organization: "Counsel India • Manasthan Clinic • Samadhan Abhiyan",
+    description:
+      "Built practical experience through counselling, psychological testing, case management, therapeutic intervention, and recovery planning across varied client demographics and rehabilitation settings.",
+  },
+  {
+    duration: "Professional Practice",
+    title: "Consultant Psychologist — Pro Bono",
+    organization: "HroHour",
+    description:
+      "Provided pro bono psychological consultations and mental health support while contributing to accessible mental health services and community wellbeing initiatives.",
+  },
+  {
+    duration: "2024 – 2026",
     title: "Master's in Clinical Psychology",
-    organization: "Postgraduate Qualification",
+    organization: "Amity University, Noida • Pursuing",
     description:
-      "Completed postgraduate training in Clinical Psychology with a strong foundation in psychotherapy, psychological assessment, clinical research, and evidence-based mental healthcare.",
+      "Advanced academic training in Clinical Psychology alongside practical experience in psychological assessment, counselling, psychotherapy, clinical research, and mental health practice.",
   },
   {
-    duration: "Professional Development",
-    title: "Clinical Training & Early Practice",
-    organization: "Manasthan Clinic • MHI • Counsel India",
+    duration: "2021 – 2024",
+    title: "Bachelor's in Philosophy & Psychology",
+    organization: "Ewing Christian College • Prayagraj",
     description:
-      "Built clinical experience through internships and counselling roles involving psychological assessments, case documentation, psychotherapy support, and evidence-based interventions for anxiety, depression, and related mental health concerns.",
+      "Undergraduate foundation in Philosophy and Psychology, providing the academic foundation for further training and professional development in clinical psychology.",
   },
 ];
 
 export default function Journey() {
   return (
-    <section id="journey" className="py-24">
+    <section id="experience" className="py-24">
       <Container>
         <SectionHeading
           eyebrow="Professional Journey"
-          title="A journey of continuous learning, clinical excellence, and compassionate care."
-          description="Professional experiences that have shaped Manvi's evidence-based and client-centred approach to mental healthcare."
+          title="Experience shaped across clinical, counselling & community settings."
+          description="A growing professional journey combining academic training with practical experience across psychological care, assessment, counselling, rehabilitation, and community mental health."
         />
 
-        <div className="mt-16 space-y-8">
+        <div className="mx-auto mt-16 max-w-4xl space-y-8">
           {journey.map((item, index) => (
             <TimelineItem
               key={`${item.duration}-${item.title}`}
