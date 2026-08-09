@@ -14,7 +14,7 @@ export const siteConfig = {
     "https://www.linkedin.com/in/manvi-mehrotra-07a170391",
 
   // Resume
-  resume: "/resume/Manvi_Mehrotra_Resume.pdf",
+  resume: "/resume/Manvi_Mehrotra_CV.pdf",
 
   // Consultation
   consultationMode: "Online & Offline",
