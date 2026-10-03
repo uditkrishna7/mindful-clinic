@@ -8,7 +8,7 @@ export const siteConfig = {
 
   // TEMPORARY
   // Replace with Manvi's own WhatsApp number once her eSIM is active.
-  whatsapp: "918081780995",
+  whatsapp: "918604857730",
 
   linkedin:
     "https://www.linkedin.com/in/manvi-mehrotra-07a170391",
