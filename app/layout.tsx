@@ -1,3 +1,4 @@
+
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
@@ -20,6 +21,9 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://mindful-clinic-sable.vercel.app"),
   alternates: {
     canonical: "/",
+  },
+  verification: {
+    google: "qZn5Bggs5Nnf7tNDscMAn1jIe3u6W3w_X9blH-DYP-4",
   },
   title: {
     default: "Manvi Mehrotra | Clinical Psychologist in Prayagraj",
