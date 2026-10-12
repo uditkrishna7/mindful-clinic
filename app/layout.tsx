@@ -18,6 +18,9 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://mindful-clinic-sable.vercel.app"),
+  alternates: {
+    canonical: "/",
+  },
   title: {
     default: "Manvi Mehrotra | Clinical Psychologist in Prayagraj",
     template: "%s | Manvi Mehrotra",
